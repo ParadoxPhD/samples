@@ -7,9 +7,18 @@ public class Program
         int[] input = {-1,0,-3,1,1,4,2};
         Array.Sort(input);
         
+        search(input);
+    }
+    
+    public static void search(int[] input)
+    {
         int length = input.Length;
         
-        if (input[length - 1] <= 0) { print("no pos"); }
+        if (input[length - 1] <= 0)
+        {
+            print("no pos");
+            return;
+        }
         
         for (int i = 0; i < length - 1; i++)
         {
@@ -19,6 +28,7 @@ public class Program
             if ((y - x > 1) && !(y + x <= y))
             {
                 print(input[i]+1);
+                return;
             }
         }
         
@@ -26,14 +36,8 @@ public class Program
     }
     
     public static void print(String text)
-    {
-		System.Console.WriteLine(text);
-        System.Environment.Exit(0);
-    }
+    { System.Console.WriteLine(text); }
     
     public static void print(int num)
-    {
-        System.Console.WriteLine(num);
-        System.Environment.Exit(0);
-    }
+    { System.Console.WriteLine(num); }
 }
