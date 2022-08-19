@@ -1,0 +1,69 @@
+*
+{
+	background-color: aquamarine;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 0.9em;
+}
+
+ul
+{
+	padding: 0;
+}
+
+li
+{
+	list-style: none;
+	padding: 5% 0 5% 0;
+}
+
+#side
+{
+	width: 8%;
+	height: 100%;
+	float: left;
+	background-color: aquamarine;
+}
+
+#side *
+{
+	background-color: aquamarine;
+}
+
+#header
+{
+	text-align: center;
+	font-size: 4vw;
+	margin: -1% -1% 0 -1%;
+	
+}
+
+#header, #header * { background-color: aliceblue; }
+
+#prurel
+{
+	display: inline-block; transform: rotate(180deg);
+}
+
+#catg
+{
+	padding-top: 10vh;
+	width: 80%;
+	height: 100%;
+	float: left;
+}
+
+#catg, #catg * { background-color: aliceblue; }
+
+#catg > div
+{
+	float: left;
+	width: min-content;
+	text-align: center;
+	font-size: 1.7vw;
+	padding: 0 0.7% 0 0.7%;
+}
