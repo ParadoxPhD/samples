@@ -1,0 +1,87 @@
+*
+{
+	background-color: bisque;
+}
+
+body
+{
+	overflow-x: scroll;
+	display: flex;
+	height: 500px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.timeline
+{
+	background-color: cornflowerblue;
+	border: 10px solid cornflowerblue;
+	min-width: 600px;
+	height: 500px;
+	float: left;
+	overflow-y: scroll;
+}
+
+.header
+{
+	text-align: center;
+	background-color: cornflowerblue;
+	display: inline-block;
+	left: 290px;
+	position: relative;
+}
+
+.settings
+{
+	position: relative;
+	float: right;
+	right: 20px;
+}
+
+.post
+{
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+
+.post *
+{
+	background-color: white;
+}
+
+.img
+{
+	height: 100px;
+	width: fit-content;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.postname
+{
+	position: absolute;
+	width: fit-content;
+	display: inline-block;
+	
+}
+
+.postname *
+{
+	display: inline-block;	
+}
+
+.posttext
+{
+	top: 40px;
+	width: inherit;
+	position: absolute;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	left: 70px;
+}
