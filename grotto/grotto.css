@@ -1,6 +1,7 @@
 *
 {
 	background-color: bisque;
+	cursor: default;
 }
 
 body
@@ -84,4 +85,58 @@ body
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	left: 70px;
+}
+
+#modal
+{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 29vw;
+	top: 20vh;
+	width: 40vw;
+	height: 54vh;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#modal-content
+{
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#modal-content > *
+{
+	background-color: white;
+}
+
+/* The Close Button */
+#close
+{
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	position: relative;
+    bottom: 3vh;
+}
+
+#close:hover,
+#close:focus
+{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#start
+{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
 }
